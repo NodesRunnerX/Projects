@@ -14,10 +14,10 @@ echo "                                                                          
 PS3='Select an action: '
 options=(
 "Подготовка к установке"
-"Установка ноды"
-"Log Node"
-"Log Farmer"
-"Exit")
+"Установка и запуск ноды"
+"Логи ноды"
+"Логи фарма"
+"Выйти")
 select opt in "${options[@]}"
 do
 case $opt in
@@ -31,14 +31,14 @@ sudo apt-get install wget -y
 break
 ;;
 
-"Установка ноды")
+"Установка и запуск ноды")
 echo "============================================================"
-echo "Write the name of your node"
+echo "Введите имя ноды (Латинскими буквам)"
 echo "============================================================"
 read NODENAME
 echo 'export NODENAME='${NODENAME} >> $HOME/.bash_profile
 echo "============================================================"
-echo "Enter your wallet address"
+echo "Введите адресс своего кошелька Polkadot"
 echo "============================================================"
 read WALLETADDRESS
 echo 'export WALLETADDRESS='${WALLETADDRESS} >> $HOME/.bash_profile
@@ -106,18 +106,18 @@ sudo systemctl restart subspace
 break
 ;;
 
-"Log Node")
+"Логи ноды")
 sudo journalctl -n 100 -f -u subspace
 break
 ;;
 
-"Log Farmer")
+"Логи фарма")
 sudo journalctl -n 100 -f -u subspacefarm
 break
 ;;
 
 
-"Exit")
+"Выйти")
 exit
 ;;
 *) echo "invalid option $REPLY";;
