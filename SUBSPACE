@@ -5,7 +5,7 @@ do
 
 # Logo
 curl -s https://raw.githubusercontent.com/NodesRunnerX/General/main/LogoKNTR.sh | bash
-echo "KNTRTEAMKNTRTEAMKNTRTEAMKNTRTEAMKNTRTEAMKNTRTEAMKNTRTEAMKNTRTEAMKNTRTEAMKNTRTEAM"
+echo "________________________________________________________________________________"
 # Menu
 
 PS3='Select an action: '
