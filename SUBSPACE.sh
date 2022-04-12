@@ -4,9 +4,7 @@ while true
 do
 
 # Logo
-echo "========================================================================="
 curl -s https://raw.githubusercontent.com/NodesRunnerX/General/main/LogoKNTR.sh | bash
-echo "========================================================================="
 
 # Menu
 
