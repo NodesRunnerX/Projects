@@ -22,7 +22,7 @@ select opt in "${options[@]}"
 do
 case $opt in
 
-"Prepare server for install")
+"Подготовка к установке")
 echo "============================================================"
 echo "Preparations have begun"
 echo "============================================================"
