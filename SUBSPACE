@@ -31,7 +31,7 @@ sudo apt-get install wget -y
 break
 ;;
 
-"Install and run Node")
+"Установка ноды")
 echo "============================================================"
 echo "Write the name of your node"
 echo "============================================================"
