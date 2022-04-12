@@ -13,8 +13,8 @@ echo "                                                                          
 
 PS3='Select an action: '
 options=(
-"Prepare server for install"
-"Install and run Node"
+"Подготовка к установке"
+"Установка ноды"
 "Log Node"
 "Log Farmer"
 "Exit")
